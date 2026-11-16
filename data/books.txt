@@ -1,0 +1,44 @@
+# Synthetic catalogue data for the Library Manager assignment.
+# Format:
+# ISBN|Title|Author
+
+9781000000177|Learning by Building|Rachel Foster
+9781000000047|The Art of Debugging|Daniel Reed
+9781000000290|Systems Under Load|Patrick Nolan
+9781000000092|Echoes of the Archive|Elena Brooks
+9781000000214|Networks and Society|Grace Turner
+9781000000016|Algorithms at Work|Nora Bennett
+9781000000344|Thinking in Models|Marcus Lane
+9781000000139|From Logic to Code|Isla Parker
+9781000000252|Reasoning About Programs|Helen Shaw
+9781000000061|Building Reliable Software|Aaron Hughes
+9781000000320|The Last Station|Clara Hayes
+9781000000184|Maps of Memory|Owen Clarke
+9781000000115|Engineering for Change|Sofia Evans
+9781000000276|Software in Practice|Nathan Bell
+9781000000030|Data in Motion|Leah Morgan
+9781000000368|Understanding Complexity|Robert Flynn
+9781000000153|Human-Centred Software|Amelia Ross
+9781000000238|Practical Algorithms|Ethan Price
+9781000000085|Digital Frontiers|Laura Mills
+9781000000313|The Last Station|Benjamin Cole
+9781000000191|Modern Systems Design|Chloe Grant
+9781000000054|Hidden Patterns|Maya Collins
+9781000000283|Structured Thinking|Adam Casey
+9781000000122|Foundations of Networks|Lucy Howard
+9781000000351|Tools for Problem Solving|Michael Stone
+9781000000023|Beneath the Glass City|Samuel Ward
+9781000000245|Programming with Objects|Rebecca Hayes
+9781000000108|Elements of Programming|Thomas Webb
+9781000000337|The Shape of Data|Sarah Quinn
+9781000000160|Inside the Machine|James Dalton
+9781000000221|Open Questions|Anna Blake
+9781000000306|A Brief History of Computing|Peter Warren
+9781000000146|Code, Data and Decisions|Emily Walsh
+9781000000269|Signals and Systems|Lucas Murray
+9781000000207|Designing Small Systems|Olivia Byrne
+9781000000078|Introduction to Data Science|Daniel Kim
+9781000000375|Visual Computing|Megan Scott
+9781000000382|Working with Data|Ryan Cooper
+9781000000399|Writing Better Programs|Jessica Moore
+9781000000405|Zero to Production|Noah Lewis

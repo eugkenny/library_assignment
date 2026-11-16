@@ -1,0 +1,24 @@
+# Synthetic member data.
+# Format:
+# member ID|name
+
+M1001|Alice Murphy
+M1002|Brian Kelly
+M1003|Carla Byrne
+M1004|David Walsh
+M1005|Emma Ryan
+M1006|Farah Ali
+M1007|Gavin Doyle
+M1008|Hannah Smith
+M1009|Isaac Brown
+M1010|Julia Martin
+M1011|Kevin O'Brien
+M1012|Laura Chen
+M1013|Marcus Flynn
+M1014|Niamh Collins
+M1015|Owen Clarke
+M1016|Priya Shah
+M1017|Robert Hayes
+M1018|Sophie Murray
+M1019|Thomas Reid
+M1020|Zara Ahmed
