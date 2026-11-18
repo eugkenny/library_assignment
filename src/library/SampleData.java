@@ -11,7 +11,7 @@ public final class SampleData {
     }
 
     /* Small dataset for initial development. */
-    public static void loadSmall(LibraryManager library) {
+    public static void load(LibraryManager library) {
         library.addBook(new Book("9781000000016", "Algorithms at Work", "Nora Bennett"));
         library.addBook(new Book("9781000000023", "Beneath the Glass City", "Samuel Ward"));
         library.addBook(new Book("9781000000030", "Data in Motion", "Leah Morgan"));
@@ -30,7 +30,7 @@ public final class SampleData {
     /*
      * Larger dataset loaded from external files.
      */
-    public static void loadFromFiles(LibraryManager library, String booksFile, String membersFile) {
+    public static void load(LibraryManager library, String booksFile, String membersFile) {
         loadBooks(library, booksFile);
         loadMembers(library, membersFile);
     }
@@ -99,7 +99,7 @@ public final class SampleData {
      *
      * Call this only after loading the larger dataset.
      */
-    public static void loadTestScenario(LibraryManager library) {
+    public static void loadTests(LibraryManager library) {
 
         /* Two loans with the same due date. */
         library.borrowBook("M1001", "9781000000016", LocalDate.of(2026, 11, 1));

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import utils.ArrayList;
 import utils.List;
-import utils.HeapPriorityQueue;
+import utils.BinaryHeap;
 import utils.PriorityQueue;
 
 public class LibraryManager {
@@ -25,37 +25,32 @@ public class LibraryManager {
         members = new ArrayList<>();
         loans = new ArrayList<>();
 
-        dueNotices = new HeapPriorityQueue<>();
+        dueNotices = new BinaryHeap<>();
 
-        nextLoanId = 1;
+        nextLoanId = 100;
     }
 
     /* Catalogue */
 
     public boolean addBook(Book book) {
-
         /*
          * TODO
          *
          * Do not allow two books with the same ISBN.
          */
-
         return false;
     }
 
     public Book findBook(String isbn) {
-
         /*
          * TODO
          *
          * Perform a linear search through books.
          */
-
         return null;
     }
 
     public void displayCatalogue() {
-
         /*
          * TODO
          *
@@ -94,14 +89,12 @@ public class LibraryManager {
          *
          * Perform a linear search through members.
          */
-
         return null;
     }
 
     /* Borrowing */
 
     public boolean borrowBook(String memberId, String isbn, LocalDate borrowedDate) {
-
         /*
          * TODO
          *
@@ -117,14 +110,12 @@ public class LibraryManager {
          * 9. Add the Loan to dueNotices.
          * 10. Mark the book as on loan.
          */
-
         return false;
     }
 
     /* Returns */
 
     public boolean returnBook(String memberId, String isbn, LocalDate returnDate) {
-
         /*
          * TODO
          *
@@ -139,26 +130,21 @@ public class LibraryManager {
          * A returned Loan can be ignored when it is
          * eventually removed from the Priority Queue.
          */
-
         return false;
     }
 
     private Loan findActiveLoan(String memberId, String isbn) {
-
         /*
          * TODO
          *
          * Search loans for a matching Loan that has
          * not yet been returned.
          */
-
         return null;
     }
 
     /* Reservations */
-
     public boolean reserveBook(String memberId, String isbn, LocalDate requestDate) {
-
         /*
          * TODO
          *
@@ -171,12 +157,10 @@ public class LibraryManager {
          *    in the reservation Queue.
          * 6. Add a Reservation to the Queue.
          */
-
         return false;
     }
 
     public void displayReservations(String isbn) {
-
         /*
          * TODO
          *
@@ -189,9 +173,7 @@ public class LibraryManager {
     }
 
     /* Loans */
-
     public void displayActiveLoans() {
-
         /*
          * TODO
          *
@@ -201,7 +183,6 @@ public class LibraryManager {
     }
 
     /* Due-date processing */
-
     public void processDueNotices(LocalDate date) {
         /*
          * TODO
@@ -224,7 +205,6 @@ public class LibraryManager {
     }
 
     /* Utility */
-
     private String createLoanId() {
         String id = "L" + nextLoanId;
         nextLoanId++;

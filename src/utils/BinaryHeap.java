@@ -2,25 +2,22 @@ package utils;
 
 import java.util.NoSuchElementException;
 
-public class HeapPriorityQueue<E extends Comparable<E>> implements PriorityQueue<E> {
+public class BinaryHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     private static final int INITIAL_CAPACITY = 8;
 
     private E[] heap;
     private int size;
-
     private final HeapOrder order;
 
-    public HeapPriorityQueue() {
+    public BinaryHeap() {
         this(HeapOrder.MIN);
     }
 
     @SuppressWarnings("unchecked")
-    public HeapPriorityQueue(HeapOrder order) {
-
+    public BinaryHeap(HeapOrder order) {
         heap = (E[]) new Comparable[INITIAL_CAPACITY];
         size = 0;
-
         this.order = order;
     }
 
@@ -72,7 +69,7 @@ public class HeapPriorityQueue<E extends Comparable<E>> implements PriorityQueue
 
     private void swim(int index) {
         while (index > 0) {
-            int parent = parent(index);
+            int parent = (index - 1) / 2;
             if (!higherPriority(heap[index], heap[parent])) {
                 break;
             }
@@ -83,9 +80,9 @@ public class HeapPriorityQueue<E extends Comparable<E>> implements PriorityQueue
     }
 
     private void sink(int index) {
-        while (leftChild(index) < size) {
-            int child = leftChild(index);
-            int right = rightChild(index);
+        while (2 * index + 1 < size) {
+            int child = 2 * index + 1;
+            int right = 2 * index + 2;
 
             // Choose the child with higher priority.
             if (right < size && higherPriority(heap[right], heap[child])) {
@@ -111,20 +108,7 @@ public class HeapPriorityQueue<E extends Comparable<E>> implements PriorityQueue
         return comparison > 0;
     }
 
-    private int parent(int index) {
-        return (index - 1) / 2;
-    }
-
-    private int leftChild(int index) {
-        return 2 * index + 1;
-    }
-
-    private int rightChild(int index) {
-        return 2 * index + 2;
-    }
-
     private void swap(int i, int j) {
-
         E temp = heap[i];
         heap[i] = heap[j];
         heap[j] = temp;
@@ -143,17 +127,17 @@ public class HeapPriorityQueue<E extends Comparable<E>> implements PriorityQueue
 
     @Override
     public String toString() {
-        String result = "[";
+        StringBuilder result = new StringBuilder();
 
+        result.append("[");
         for (int i = 0; i < size; i++) {
-
             if (i > 0) {
-                result += ", ";
+                result.append(", ");
             }
-            result += heap[i];
+            result.append(heap[i]);
         }
-        result += "]";
+        result.append("]");
 
-        return result;
+        return result.toString();
     }
 }

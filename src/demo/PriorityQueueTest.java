@@ -1,6 +1,6 @@
 package demo;
 
-import utils.HeapPriorityQueue;
+import utils.BinaryHeap;
 import utils.PriorityQueue;
 
 public class PriorityQueueTest {
@@ -8,7 +8,7 @@ public class PriorityQueueTest {
     public static void main(String[] args) {
 
         PriorityQueue<Integer> queue =
-                new HeapPriorityQueue<>();
+                new BinaryHeap<>();
 
         queue.add(8);
         queue.add(3);
